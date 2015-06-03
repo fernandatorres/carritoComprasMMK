@@ -46,3 +46,20 @@ function modificarCategoria(pos)
     else
         return false;
 }
+
+
+function eliminarAdmin(pos)
+{
+    if(confirm("Desea borrar el registro?"))
+        location.href="eliminarAdmin.php?id="+pos;
+    else
+        return false;
+}
+
+function modificarAdmin(pos)
+{
+    if(confirm("Desea cambiar los datos"))
+        location.href="modificarAdmin.php?id="+pos;
+    else
+        return false;
+}
